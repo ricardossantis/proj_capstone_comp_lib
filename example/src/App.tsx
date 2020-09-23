@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ButtonSubmit, ButtonCancel, PageHeader } from 'proj-capstone-lib'
+import { ButtonSubmit, ButtonCancel, PageHeader, Card } from 'proj-capstone-lib'
 
 import 'proj-capstone-lib/dist/index.css'
 
@@ -8,6 +8,11 @@ const App = () => {
   return (
     <>
       <PageHeader>teste</PageHeader>
+      <Card
+      url='https://static1.comicvine.com/uploads/scale_super/11118/111187046/5126812-geralt_ghoul_slayer_by_frostedflakes62-d9xd93e.jpg'
+      title='Geralt Of Rivia'
+      subtitle='The Blaviken Butcher'
+    />
       <ButtonSubmit
         onClick={() => console.log('button submit')}
         text='Click to submit'
