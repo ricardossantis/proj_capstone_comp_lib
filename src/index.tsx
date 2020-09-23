@@ -1,3 +1,3 @@
-import Modal from './container/modal-container/index.js'
+import Modal from './container/modal-container/index'
 
 export { Modal }

@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Modal from '../../components/modal'
+import { ModalProps } from '../../interface'
 
-const ModalAction = () => {
+const ModalAction = (props: ModalProps) => {
   const [visible, setVisibility] = useState<boolean>(false)
-  return <Modal onXClick={setVisibility(!visible)} />
+  return <Modal {...props} onXClick={() => setVisibility(!visible)} />
 }
 
 export default ModalAction

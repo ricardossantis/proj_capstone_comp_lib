@@ -1,14 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { ModalProps } from '../../interface'
 
-interface modalProps {
-  visible?: boolean
-  title?: string
-  children?: React.ReactNode
-  onXClick?: any
-}
-
-const Modal = ({ visible, title, children, onXClick }: modalProps) => {
+const Modal = ({ visible, title, children, onXClick }: ModalProps) => {
   return visible ? (
     <ModalDiv>
       <ModalHeader>
