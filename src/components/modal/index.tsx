@@ -2,19 +2,27 @@ import React from 'react'
 import styled from 'styled-components'
 
 interface modalProps {
-  visible: boolean
-  title: string
-  children: React.ReactNode
+  visible?: boolean
+  title?: string
+  children?: React.ReactNode
+  onXClick?: any
 }
 
-const Modal = (props: modalProps) => {
-  return props.visible ? (
+const Modal = ({ visible, title, children, onXClick }: modalProps) => {
+  return visible ? (
     <ModalDiv>
       <ModalHeader>
-        <ModalTextBox>{props.title}</ModalTextBox>
-        <ModalButton>X</ModalButton>
+        <ModalTextBox>{title}</ModalTextBox>
+        <ModalButton
+          onClick={() => {
+            console.log('oi')
+            onXClick
+          }}
+        >
+          X
+        </ModalButton>
       </ModalHeader>
-      <ModalBody>{props.children}</ModalBody>
+      <ModalBody>{children}</ModalBody>
     </ModalDiv>
   ) : null
 }
