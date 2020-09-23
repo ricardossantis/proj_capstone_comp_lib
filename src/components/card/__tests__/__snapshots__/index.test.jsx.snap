@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderer 1`] = `
+<div
+  className="sc-bdnylx bBZxjW"
+>
+  <figure
+    className="sc-gtssRu liqkNM"
+  >
+    <img
+      className="sc-dlnjPT eJufFV"
+      src="https://static1.comicvine.com/uploads/scale_super/11118/111187046/5126812-geralt_ghoul_slayer_by_frostedflakes62-d9xd93e.jpg"
+    />
+  </figure>
+  <div
+    className="sc-hKFyIo hhUFrW"
+  >
+    <h1>
+      Geralt Of Rivia
+    </h1>
+    <h3>
+      The Blaviken Butcher
+    </h3>
+  </div>
+</div>
+`;
