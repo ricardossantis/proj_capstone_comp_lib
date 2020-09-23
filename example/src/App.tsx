@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'proj-capstone-lib'
-import 'proj-capstone-lib/dist/index.css'
+import { Footer } from 'proj-capstone-lib'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Footer></Footer>
 }
 
 export default App
