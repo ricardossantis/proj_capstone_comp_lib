@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { PageHeader } from './index'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(PageHeader).toBeTruthy()
   })
 })
