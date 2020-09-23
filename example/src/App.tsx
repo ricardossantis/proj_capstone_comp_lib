@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'proj-capstone-lib'
+import { Button } from 'proj-capstone-lib'
 import 'proj-capstone-lib/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Button onClick={() => console.log('funciona')} text='Click me' />
 }
 
 export default App
