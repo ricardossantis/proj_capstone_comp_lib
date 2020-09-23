@@ -1,10 +1,13 @@
 import React from 'react'
-
-import { ExampleComponent } from 'proj-capstone-lib'
+import { Form } from 'proj-capstone-lib'
 import 'proj-capstone-lib/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const handleOnChange = () => {
+    console.log('foi')
+  }
+
+  return <Form onChange={handleOnChange} placeholder='digite aqui'></Form>
 }
 
 export default App

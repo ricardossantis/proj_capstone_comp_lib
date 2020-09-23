@@ -1,20 +1,23 @@
-import React, { useState } from "react";
-import { TextField } from "../text-field/index";
-import { FormRow } from "./styles";
+import * as React from 'react'
+import styled from 'styled-components'
 
-const Form = () => {
+interface Props {
+  onChange?: () => void
+  placeholder: string
+}
+
+const Form = ({ placeholder, onChange }: Props) => {
   return (
-    <React.Fragment>
-      <FormRow>
-        <TextField
-          name="field1"
-          type="text"
-          value={this.state.values.field1}
-          placeholder="Type here"
-          onChange={this.onChange}
-        />
-      </FormRow>
-    </React.Fragment>
-  );
-};
-export { Form };
+    <form onChange={onChange}>
+      <StyledInput placeholder={placeholder} />
+    </form>
+  )
+}
+export default Form
+
+const StyledInput = styled.input`
+  font-size: 14px;
+  padding: 6px 8px;
+  border: 3px solid black;
+  width: 100px;
+`
