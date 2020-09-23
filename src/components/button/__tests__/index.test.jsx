@@ -1,11 +1,23 @@
 import React from 'react'
-import Button from '../index'
+import ButtonSubmit from '../buttonSubmit/'
 import renderer from 'react-test-renderer'
+import ButtonCancel from '../buttonCancel'
 
 it('renders correctly', () => {
-  const testButton = renderer.create(
-    (<Button onClick={} text={false} />).toJSON()
-  )
+  const tree = renderer
+    .create(
+      <ButtonSubmit
+        onClick={() => console.log('button submit')}
+        text='Click to submit'
+      />
+    )
+    .toJSON()
+  expect(tree).toMatchSnapshot()
+})
 
-  expect(testButton).toMatchSnapshot()
+it('renders well', () => {
+  const tree2 = renderer
+    .create(<ButtonCancel onClick={() => {}} text='Click to cancel' />)
+    .toJSON()
+  expect(tree2).toMatchSnapshot()
 })

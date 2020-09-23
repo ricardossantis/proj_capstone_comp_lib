@@ -6,17 +6,17 @@ interface Props {
   onClick?: () => void
 }
 
-const Button = ({ text, onClick }: Props) => {
+const ButtonSubmit = ({ text, onClick }: Props) => {
   return <Submit onClick={onClick}>{text}</Submit>
 }
 
-export default Button
+export default ButtonSubmit
 
 const Submit = styled.button`
-  box-shadow: 2px 8px #cc4b00;
-  border: 1px solid red;
+  box-shadow: 2px 8px #007bff;
+  border: 1px solid #007bff;
   background-color: white;
-  color: red;
+  color: #007bff;
   text-transform: uppercase;
   border-radius: 1rem;
   font-size: 1rem;
