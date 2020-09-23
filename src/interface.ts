@@ -1,5 +1,5 @@
 export interface ModalProps {
-  visible?: boolean
+  visible: boolean
   title?: string
   children?: React.ReactNode[] | React.ReactNode
   onXClick?: any

@@ -9,8 +9,7 @@ const Modal = ({ visible, title, children, onXClick }: ModalProps) => {
         <ModalTextBox>{title}</ModalTextBox>
         <ModalButton
           onClick={() => {
-            console.log('oi')
-            onXClick
+            onXClick()
           }}
         >
           X
