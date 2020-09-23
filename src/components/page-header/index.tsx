@@ -8,7 +8,7 @@ export const PageHeader = ({ children }: Props) => {
   return <StyledHeader>{children}</StyledHeader>
 }
 const StyledHeader = styled.div`
-  position: -webkit-sticky; /* Necessário para funcionar no Safari */
+  position: -webkit-sticky; 
   position: sticky;
   top: 0;
   max-width: 100vw;
