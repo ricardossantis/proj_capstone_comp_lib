@@ -1,10 +1,25 @@
 import React from 'react'
 
-import { Button } from 'proj-capstone-lib'
+import { ButtonSubmit, ButtonCancel } from 'proj-capstone-lib'
+
 import 'proj-capstone-lib/dist/index.css'
 
 const App = () => {
-  return <Button onClick={() => console.log('funciona')} text='Click me' />
+  return (
+    <>
+      <ButtonSubmit
+        onClick={() => console.log('button submit')}
+        text='Click to submit'
+      />
+      <ButtonCancel
+        onClick={() => {
+          console.log('button cancel')
+          return false
+        }}
+        text='Click to cancel'
+      />
+    </>
+  )
 }
 
 export default App
