@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<button
+  className="sc-bdnylx gbrgUp"
+  onClick={[Function]}
+>
+  Click to submit
+</button>
+`;
+
+exports[`renders well 1`] = `
+<button
+  className="sc-gtssRu ftMiYT"
+  onClick={[Function]}
+>
+  Click to cancel
+</button>
+`;
