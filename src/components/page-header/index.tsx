@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 interface Props {
-  children: string | object
+  children: React.ReactNode
 }
 
 export const PageHeader = ({ children }: Props) => {
