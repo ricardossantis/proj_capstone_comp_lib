@@ -7,7 +7,7 @@ const App = () => {
     console.log('foi')
   }
 
-  return <Form onChange={handleOnChange} placeholder='digite aqui'></Form>
+  return <Form onChange={handleOnChange} placeholder='digite aqui' />
 }
 
 export default App
