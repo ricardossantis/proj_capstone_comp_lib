@@ -15,6 +15,7 @@ const StyledFooter = styled.footer`
   height: 20vh;
   padding: 1%;
   display: flex;
+  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
