@@ -15,12 +15,11 @@ const StyledFooter = styled.footer`
   height: 20vh;
   padding: 1%;
   display: flex;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(222, 215, 215);
   left: 0;
   bottom: 0;
-  width: 100%;
+  max-width: 100%;
 `
