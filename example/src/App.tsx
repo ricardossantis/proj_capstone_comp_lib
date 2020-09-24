@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {  Modal, PageHeader, Card, ButtonSubmit, ButtonCancel } from 'proj-capstone-lib'
+import {  Modal, PageHeader, Card, ButtonSubmit, ButtonCancel, TextField } from 'proj-capstone-lib'
 
 import 'proj-capstone-lib/dist/index.css'
 
@@ -25,12 +25,14 @@ const App = () => {
         text='Click to cancel'
       />
       <div>
+      <TextField placeholder="teste"/>
       <Modal visible={visible} title='Modal'>
         <input placeholder='teste' />
         <button>send</button>
       </Modal>
       <button onClick={() => setVisibility(!visible)}>Open Modal</button>
     </div>
+
     </>
   )
 }
