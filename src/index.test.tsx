@@ -1,7 +1,6 @@
-import { ButtonSubmit, ButtonCancel, PageHeader, Card } from '.'
+import { ButtonSubmit, ButtonCancel, PageHeader, Card, Footer } from '.'
 import Modal from './container/modal-container/index'
 import Form from './components/form'
-
 
 describe('Card', () => {
   it('is truthy', () => {
@@ -11,5 +10,6 @@ describe('Card', () => {
     expect(Modal).toBeTruthy()
     expect(Form).toBeTruthy()
     expect(PageHeader).toBeTruthy()
+    expect(Footer).toBeTruthy()
   })
 })

@@ -5,7 +5,8 @@ import {
   PageHeader,
   Card,
   ButtonSubmit,
-  ButtonCancel
+  ButtonCancel,
+  Footer
 } from 'proj-capstone-lib'
 
 import 'proj-capstone-lib/dist/index.css'
@@ -42,6 +43,7 @@ const App = () => {
         </Modal>
         <button onClick={() => setVisibility(!visible)}>Open Modal</button>
       </div>
+      <Footer>Teste</Footer>
     </>
   )
 }
