@@ -19,7 +19,6 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   background-color: rgba(222, 215, 215);
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;

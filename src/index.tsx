@@ -1,4 +1,4 @@
-import Footer from './footer'
+import Footer from './components/footerents/footer'
 import ButtonSubmit from './components/button/buttonSubmit/'
 import ButtonCancel from './components/button/buttonCancel/'
 import Modal from './container/modal-container/index'
